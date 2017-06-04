@@ -11,15 +11,28 @@
 
     <style name="switchCompact" parent="Theme.AppCompat.Light">
         <!-- active thumb & track color (30% transparency) -->
-        <item name="colorControlActivated">#7dc6bf</item>
+        <!--<item name="colorControlActivated">#7dc6bf</item> -->
 
         <!-- inactive thumb color -->
-        <item name="colorSwitchThumbNormal">#31343f
-        </item>
+        <!--<item name="colorSwitchThumbNormal">#31343f
+        </item>-->
 
         <!-- inactive track color (30% transparency) -->
-        <item name="android:colorForeground">#42221f1f
-        </item>
+        <!--<item name="android:colorForeground">#42221f1f
+        </item>-->
+
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/colorBackground</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/colorBackground</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- You can also set colorControlNormal, colorControlActivated
+             colorControlHighlight, and colorSwitchThumbNormal. -->
     </style>
 
     <style name="AppTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
