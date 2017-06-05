@@ -1,5 +1,7 @@
 package com.cryogen.secure_sign_in_android;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.support.v7.app.AppCompatActivity;
@@ -206,11 +208,7 @@ public class SecureSignInMain extends AppCompatActivity //implements LoaderCallb
                 encryptPassword();
             }
         });
-
         switchCompact = (Switch) findViewById(R.id.switch_Compact);
-
-        //getActionBar()/* or getSupportActionBar() */.setTitle(Html.fromHtml("<font color=\"#7dc6bf\">" + getString(R.string.app_name) + "</font>"));
-       // mLoginFormView = findViewById(R.id.main);
     }
 
 
@@ -231,10 +229,6 @@ public class SecureSignInMain extends AppCompatActivity //implements LoaderCallb
 
             if (pswPassword.getText().toString().length() == 0)
             {
-                //TODO: Remove old code
-                /*pswPassword.requestFocus();
-                throw new Exception("Please Enter a Password");*/
-
                 pswPassword.setError("Please Enter a Password");
                 focusView = pswPassword;
                 cancel = true;
@@ -244,10 +238,6 @@ public class SecureSignInMain extends AppCompatActivity //implements LoaderCallb
 
             if (pswKey.getText().toString().length() == 0)
             {
-                //TODO: Remove old code
-                /*pswKey.requestFocus();
-                throw new Exception("Please Enter a Key");*/
-
                 pswKey.setError("Please Enter a Key");
                 focusView = pswKey;
                 cancel = true;
@@ -255,21 +245,38 @@ public class SecureSignInMain extends AppCompatActivity //implements LoaderCallb
 
             if (cancel)
             {
-                // There was an error; don't attempt login and focus the first
-                // form field with an error.
                 focusView.requestFocus();
             }
             else
             {
                 key = pswKey.getText().toString().toCharArray();
                 if(switchCompact.isChecked())
-                    limit = 8;
+                    limit = 12;
                 else limit = 32;
                 finalPassword = encrypt(password, key, limit);
                 if (finalPassword == null)
                     throw new EncryptionException("Error Occurred During Encryption Process");
                 Intent intent = new Intent(SecureSignInMain.this, OSD.class);
                 startActivity(intent);
+                Thread deletePassword = new Thread()
+                {
+                    public void run()
+                    {
+                        try
+                        {
+                            Thread.sleep(10000);
+                            ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+                            ClipData clip = ClipData.newPlainText(null, "");
+                            clipboard.setPrimaryClip(clip);
+                        }
+                        catch(InterruptedException v)
+                        {
+                            v.printStackTrace();
+                        }
+                    }
+                };
+
+                deletePassword.start();
             }
         }
         catch (Exception ex)
