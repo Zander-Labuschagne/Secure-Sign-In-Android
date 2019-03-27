@@ -1,4 +1,4 @@
-# Secure Sign In Android
+# Secure-Sign-In-Android
 This is a mobile application I have created in an attempt to improve my online account security, it is the Android version of my Secure Sign In project.
 
 Benifits:
@@ -9,13 +9,13 @@ Benifits:
   - Easy to use.
   
 This is my first Android application I have created. Feel free to criticize or comment.
-There are desktop versions available, however some are not always up to date and I have left some of them discontinued/incomplete. I work on these projects in my free time only so don't expect regular updates from me.
+There are desktop(Linux), iPhone, iPad and macOS applications available as well, however some are not always up to date and I have left some of them discontinued/incomplete. I work on these projects in my free time only so don't expect regular updates from me.
 
-Desktop version: https://gitlab.com/Zander-Labuschagne/SecureSignIn-v4b
+Desktop version: https://github.com/Zander-Labuschagne/Secure-Sign-In
   
-The logo and name on the application comes from an iWorks template, it is not a registered company name or logo, I just added it to make it look impressive.
+The logo and name on the application comes from an iWorks template, it is not a registered company name or logo, I just added it to make it look cool.
 
-E-Mail: zander.labuschagne@protonmail.ch
+E-Mail: ZANDER.LABUSCHAGNE@PROTONMAIL.CH
 
 Copyright (C) 2017 Zander Labuschagne. This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3 as published by the Free Software Foundation.
 
