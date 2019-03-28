@@ -2,8 +2,8 @@
 This is a mobile application I have created in an attempt to improve my online account security, it is the Android version of my Secure Sign In project. 
 
 #### Compatibility notes:
-_Android 7.1.1 or later is required to use this application._
-_This application was so far only tested on a Sony Xperia X Compact running Android 8.0.0._
+  - _Android 7.1.1 or later is required to use this application._
+  - _This application was so far only tested on a Sony Xperia X Compact running Android 8.0.0._
 
 Benifits:
   - Remember one password for all sites, but all sites have different passwords.
