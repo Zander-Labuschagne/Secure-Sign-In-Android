@@ -1,9 +1,11 @@
 # Secure Sign In Android
 This is a mobile application I have created in an attempt to improve my online account security, it is the Android version of my Secure Sign In project. 
 
-#### _Android 7.1.1 or later is required to use this application._
+#### Compatibility notes:
+  - _Android 7.1.1 or later is required to use this application._
+  - _This application was so far only tested on a Sony Xperia X Compact running Android 8.0.0._
 
-Benifits:
+#### Benifits:
   - Remember one password for all sites, but all sites have different passwords.
   - Don't know the actual password which is entered in the password box on the website.
   - Provides a very strong, long and complex password.
@@ -21,7 +23,10 @@ E-Mail: <zander.labuschagne@protonmail.ch>
 
 Copyright (C) 2019 Zander Labuschagne. This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3 as published by the Free Software Foundation.
 
-How to use application:
+#### Installation:
+Copy the _.apk_ Android binary file found inside the bin folder to you Android smartphone/tablet device using a USB cable.
+
+#### How to use application:
   1. Enter a password you will remember in the password box, preferably a strong and complicated password because this will influence the complexity of the resulting password.
   2. Enter a key, such as google, facebook or whatever.
   3. Click on Encrypt Password and the rest is self explanatory. The password is cleared from memory after 10 seconds when copying the password.
