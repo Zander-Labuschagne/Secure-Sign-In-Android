@@ -1,5 +1,5 @@
 # Secure Sign In Android v2 *Discontinued*
-This is a mobile application I have created in an attempt to improve my online account security, it is the Android version(_v2_) of my Secure Sign In project. Find the latest version at https://gitlab.com/Zander-Labuschagne/SecureSignIn-Mobile which should have more Android device support as well as support for other devices such as Sailfish OS and iOS. 
+This is a mobile application I have created in an attempt to improve my online account security, it is the Android version(_v2_) of my Secure Sign In project. Find the latest version at https://gitlab.com/Zander-Labuschagne/SecureSignIn-Mobile which should have more Android device support as well as support for other devices such as Sailfish OS and iOS. The user provides a password with an accompanying key that is unique to the website(or account) requiring the password, the application then provides a lengthy and complicated password to be used instead.
 
 #### Compatibility notes:
   - _Android 7.1.1 or later is required to use this application._
